@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otaku Game &ndash; G1</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+<style>
+  :root{--gold:#c9a84c;--red:#9b1b1b;--ink:#0d0d0d;--paper:#f5efe0;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--ink);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Sawarabi Mincho',serif;padding:2rem 1rem;}
+  .bg{position:fixed;inset:0;background:radial-gradient(ellipse at center,#1a0a0a 0%,#000 100%);z-index:0;}
+  .bg::before{content:'';position:fixed;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(201,168,76,.04) 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(201,168,76,.04) 60px);}
+  .container{position:relative;z-index:1;text-align:center;max-width:700px;width:100%;animation:fadeIn 1.6s ease forwards;opacity:0;}
+  @keyframes fadeIn{to{opacity:1;}}
+  .brand{font-family:'Cinzel Decorative',cursive;font-size:clamp(1.1rem,4vw,1.7rem);color:var(--gold);letter-spacing:.25em;text-transform:uppercase;margin-bottom:.3rem;}
+  .sep{width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:.8rem auto 1.4rem;}
+  .badge{display:inline-block;border:1px solid var(--red);color:var(--red);font-size:.65rem;letter-spacing:.3em;padding:.3rem .9rem;margin-bottom:1.8rem;text-transform:uppercase;}
+  .scroll{background:var(--paper);border:2px solid var(--gold);border-radius:4px;padding:2.4rem 2.2rem;box-shadow:0 0 60px rgba(201,168,76,.12),inset 0 0 40px rgba(0,0,0,.06);position:relative;}
+  .scroll::before,.scroll::after{content:'';position:absolute;left:50%;transform:translateX(-50%);width:80%;height:10px;background:var(--gold);opacity:.25;border-radius:2px;}
+  .scroll::before{top:-1px;}.scroll::after{bottom:-1px;}
+  .kanji{font-size:2.8rem;color:var(--red);display:block;margin-bottom:.8rem;opacity:.7;}
+  .gardien{font-size:.72rem;color:var(--red);letter-spacing:.25em;text-transform:uppercase;margin-bottom:1.6rem;opacity:.85;}
+  .enigme{font-size:clamp(.92rem,2.5vw,1.08rem);color:#2a1a0a;line-height:2.1;letter-spacing:.04em;text-align:left;}
+  .num{font-family:'Cinzel Decorative',cursive;color:var(--gold);font-size:.75rem;letter-spacing:.3em;margin-top:2rem;opacity:.6;}
+  .parcours-tag{font-size:.6rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;opacity:.5;margin-bottom:1rem;display:block;}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="container">
+  <div class="brand">Otaku Game</div>
+  <div class="sep"></div>
+  <span class="parcours-tag">GAMMA · JOUR 3</span>
+  <div class="badge">&Eacute;nigme &middot; &#35442; &middot; #G1</div>
+  <div class="scroll">
+    <span class="kanji">樹</span>
+    <div class="gardien">Gardien : Senku — Dr. Stone</div>
+    <p class="enigme">Dans Dr. Stone, Senku revient &agrave; la vie apr&egrave;s 3&nbsp;700 ans p&eacute;trifi&eacute;&hellip; sous une &eacute;corce.<br>L&rsquo;arbre est le d&eacute;but de tout. Il vit, il grandit, il cache.<br>Dans la cour de ton &eacute;cole, il existe un gardien silencieux plus vieux que tous les &eacute;tudiants ici r&eacute;unis.<br>Le fragment est &agrave; ce niveau &mdash; cherche l&agrave; o&ugrave; les racines commencent &agrave; s&rsquo;&eacute;lever.<br><br>&#11088; <strong>D&Eacute;FI BONUS (+30 pts) :</strong> Vers quel point cardinal faites-vous face&nbsp;? R&eacute;pondez au GM.<br><br>&#x1F511; <strong>Mot &agrave; garder : TAMASHI</strong></p>
+    <div class="num">&mdash; No. 010 &mdash;</div>
+  </div>
+</div>
+</body>
+</html>
